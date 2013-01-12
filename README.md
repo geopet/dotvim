@@ -10,6 +10,11 @@ As a little bit of history, this is a thing I'm doing after a few years of worki
 
 [Pathogen](https://github.com/tpope/vim-pathogen)
 
+## Colorschemes:
+
+[Tomorrow-Theme](https://github.com/chriskempson/vim-tomorrow-theme)  
+[Solarized](https://github.com/altercation/vim-colors-solarized)
+
 ## Installation:
 
 `git clone git://github.com/geopet/dotvim.git ~/.vim`
