@@ -5,3 +5,40 @@ This is the repo for my vim dotfile management.
 This commit history is going to be a mess. If you read it, I suspect you'll be able to see into a dark place in my mind.
 
 As a little bit of history, this is a thing I'm doing after a few years of working with [Janus](https://github.com/carlhuda/janus).
+
+## Modules:
+
+[Pathogen](https://github.com/tpope/vim-pathogen)
+
+## Installation:
+
+`git clone git://github.com/geopet/dotvim.git ~/.vim`
+
+Create symlinks:
+
+`ln -s ~/.vim/vimrc ~/.vimrc`  
+`ln -s ~/.vim/gvimrc ~/.gvimrc`  
+
+`cd ~/.vim`  
+`git submodule update --init`
+
+## Upgrade submodule plugins:
+
+### Single plugin:
+
+`cd ~/.vim/bundle/[plugin_to_be_updated]`  
+`git pull origin master`
+
+### All submodule plugins:
+
+`cd ~/.vim`  
+`git submodule foreach git pull origin master`
+
+_Install shamelessly taken from [Vimcasts Episode 27](http://vimcasts.org/e/27)._
+
+## Vim Resources:
+
+[The Vim Editor](http://www.vim.org/)  
+[Derck Wyatt's Videos](http://www.derekwyatt.org/vim/vim-tutorial-videos/) - I can't recommend this resouce highly enough.  
+[Vimcasts](http://vimcasts.org/) - Every episode I've watched I've learned something.  
+[Net Tuts Vim Roundup](http://net.tutsplus.com/articles/web-roundups/25-vim-tutorials-screencasts-and-resources/) - I haven't looked closely at this one, but there seems to be some nice recommendations there.  
