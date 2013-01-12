@@ -3,6 +3,8 @@ let mapleader=" "
 
 " loading Pathogen for runtime management <https://github.com/tpope/vim-pathogen>
 execute pathogen#infect()
+" Allows me to manage my color schemes with submodules and Pathogen
+execute pathogen#infect('colors')
 
 filetype plugin on      " When a filetype is edited, its plugin file is loaded (:h filetype-plugin-on)
 filetype indent on      " When a filetype is edited, its indent file is loaded (:h filetype-indent-on)
