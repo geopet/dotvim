@@ -34,11 +34,17 @@ Create symlinks:
 `cd ~/.vim`  
 `git submodule foreach git pull origin master`
 
-_Install shamelessly taken from [Vimcasts Episode 27](http://vimcasts.org/e/27)._
+_Install instructions shamelessly taken from [Vimcasts Episode 27](http://vimcasts.org/e/27)._
 
-## Vim Resources:
+## Vim resources:
 
 [The Vim Editor](http://www.vim.org/)  
 [Derck Wyatt's Videos](http://www.derekwyatt.org/vim/vim-tutorial-videos/) - I can't recommend this resouce highly enough.  
 [Vimcasts](http://vimcasts.org/) - Every episode I've watched I've learned something.  
 [Net Tuts Vim Roundup](http://net.tutsplus.com/articles/web-roundups/25-vim-tutorials-screencasts-and-resources/) - I haven't looked closely at this one, but there seems to be some nice recommendations there.  
+
+## Some additional references:
+
+[Basic Janus vim settings](https://github.com/carlhuda/janus/blob/master/janus/vim/core/before/plugin/settings.vim)  
+[thoughtbot's vimrc](https://github.com/thoughtbot/dotfiles/blob/master/vimrc)  
+[Mislav Marohnic's vim post](http://mislav.uniqpath.com/2011/12/vim-revisited/)  

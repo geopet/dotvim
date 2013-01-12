@@ -23,3 +23,9 @@ set hlsearch            " Highlight search results (:h 'hlsearch')
 set incsearch           " Highlights search incrementally (:h 'incsearch')
 set ignorecase          " Case insensitive searching (:h 'ignorecase'
 set smartcase           " Overrides ignorecase when an upper case character is present
+
+" Saving myself:
+nnoremap <Left> :echoe: "Use h"<CR>
+nnoremap <Right> :echoe: "Use l"<CR>
+nnoremap <Up> :echoe: "Use k"<CR>
+nnoremap <Down> :echoe: "Use j"<CR>
