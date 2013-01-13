@@ -16,3 +16,6 @@
 [submodule "languages/php--Garvin"]
 	path = languages/php--Garvin
 	url = git://github.com/vim-scripts/php.vim--Garvin.git
+[submodule "languages/vim-javascript"]
+	path = languages/vim-javascript
+	url = git://github.com/pangloss/vim-javascript.git
