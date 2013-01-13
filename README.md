@@ -8,7 +8,8 @@ As a little bit of history, this is a thing I'm doing after a few years of worki
 
 ## Modules:
 
-[Pathogen](https://github.com/tpope/vim-pathogen)
+[Pathogen](https://github.com/tpope/vim-pathogen) - Manage runtime path and plugins
+[Syntastic](https://github.com/scrooloose/syntastic/) - Syntax checking
 
 ## Colorschemes:
 
