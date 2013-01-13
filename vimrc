@@ -15,6 +15,7 @@ set showcmd             " Display incomplete commands (:h 'showcmd')
 set laststatus=2        " Always show status line (:h 'laststatus')
 set ruler               " Show line and column number in status (:h 'ruler')
 set number              " Show line number (:h number)
+set numberwidth=5       " Giving space on the number line (:h 'numberwidth')
 set encoding=utf-8      " Set encoding to UTF-8 (:h 'encoding')
 
 set nowrap              " Turn off line wrap (:h nowrap)
@@ -25,6 +26,12 @@ set hlsearch            " Highlight search results (:h 'hlsearch')
 set incsearch           " Highlights search incrementally (:h 'incsearch')
 set ignorecase          " Case insensitive searching (:h 'ignorecase')
 set smartcase           " Overrides ignorecase when an upper case character is present (:h 'smartcase')
+
+set tabstop=2           " Set tabs to 2 spaces (:h 'tabstop')
+set shiftwidth=2        " Spaces for autoindent >> and cindent (:h 'shiftwidth')
+set autoindent          " Repeat the indent from the line previous (:h 'autoindent')
+set smartindent         " A little better indenting (:h 'smartindent')
+set cindent             " C-style indentation (:h 'cindent)
 
 " Saving myself:
 nnoremap <Left> :echoe: "Use h"<CR>
