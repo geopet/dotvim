@@ -9,8 +9,9 @@ let mapleader=" "
 " Loading plugins via Pathogen for runtime management <https://github.com/tpope/vim-pathogen>
 execute pathogen#infect()
 
-" Allows me to manage my color schemes with submodules and Pathogen
+" Allows me to manage my colorscheme & language syntax files with submodules and Pathogen
 execute pathogen#infect('colors')
+execute pathogen#infect('languages')
 
 colorscheme Tomorrow-Night
 
