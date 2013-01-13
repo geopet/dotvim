@@ -7,3 +7,6 @@
 [submodule "colors/tomorrow-theme"]
 	path = colors/tomorrow-theme
 	url = git://github.com/chriskempson/vim-tomorrow-theme.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git://github.com/scrooloose/syntastic.git
