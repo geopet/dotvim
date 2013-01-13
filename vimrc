@@ -33,8 +33,26 @@ set autoindent          " Repeat the indent from the line previous (:h 'autoinde
 set smartindent         " A little better indenting (:h 'smartindent')
 set cindent             " C-style indentation (:h 'cindent)
 
+set hidden              " Deals with changed buffers silently (:h 'hidden')
+set listchars=tab:▸\ ,eol:¬
+
 " Saving myself:
 nnoremap <Left> :echoe: "Use h"<CR>
 nnoremap <Right> :echoe: "Use l"<CR>
 nnoremap <Up> :echoe: "Use k"<CR>
 nnoremap <Down> :echoe: "Use j"<CR>
+
+" function to remove trailing whitespace
+function! <SID>StripTrailingWhitespaces()
+  " Preparation save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Do the business:
+  %s/\s\+$//e
+  " Clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
+endfunction
+
+nnoremap <leader>sr :silent :call <SID>StripTrailingWhitespaces()<CR>
