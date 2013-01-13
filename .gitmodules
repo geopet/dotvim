@@ -13,3 +13,6 @@
 [submodule "languages/vim-ruby"]
 	path = languages/vim-ruby
 	url = git://github.com/vim-ruby/vim-ruby.git
+[submodule "languages/php--Garvin"]
+	path = languages/php--Garvin
+	url = git://github.com/vim-scripts/php.vim--Garvin.git
