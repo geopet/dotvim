@@ -36,6 +36,8 @@ set cindent             " C-style indentation (:h 'cindent)
 set hidden              " Deals with changed buffers silently (:h 'hidden')
 set listchars=tab:▸\ ,eol:¬
 
+colorscheme Tomorrow-Night
+
 " Saving myself:
 nnoremap <Left> :echoe: "Use h"<CR>
 nnoremap <Right> :echoe: "Use l"<CR>
