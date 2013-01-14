@@ -19,3 +19,6 @@
 [submodule "languages/vim-javascript"]
 	path = languages/vim-javascript
 	url = git://github.com/pangloss/vim-javascript.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
