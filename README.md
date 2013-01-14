@@ -9,7 +9,9 @@ As a little bit of history, this is a thing I'm doing after a few years of worki
 ## Modules:
 
 [Pathogen](https://github.com/tpope/vim-pathogen) - Manage runtime path and plugins  
-[Syntastic](https://github.com/scrooloose/syntastic/) - Syntax checking
+[Syntastic](https://github.com/scrooloose/syntastic/) - Syntax checking  
+[NERDTree](https://github.com/scrooloose/nerdtree) - File exploring  
+[NERDCommenter](https://github.com/scrooloose/nerdcommenter) - Simple commenting
 
 ## Colorschemes:
 
