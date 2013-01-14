@@ -14,6 +14,8 @@ execute pathogen#infect('colors')
 execute pathogen#infect('languages')
 
 colorscheme Tomorrow-Night
+set guifont=Source\ Code\ Pro:h14
+set colorcolumn=80
 
 filetype plugin on                " When a filetype is edited, its plugin file is loaded (:h filetype-plugin-on)
 filetype indent on                " When a filetype is edited, its indent file is loaded (:h filetype-indent-on)
