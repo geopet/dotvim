@@ -48,6 +48,17 @@ set wildmenu                      " Tab completion in commandline (:h 'wildmenu'
 set hidden                        " Deals with changed buffers silently (:h 'hidden')
 set listchars=tab:▸\ ,eol:¬
 
+" PHP customization, see comments in syntax
+let g:php_sql_query=1
+let g:php_html_in_strings=1
+let g:php_folding=1
+let g:php_html_in_strings=1
+
+" JavaScript customizations
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:html_indent_script1 = "inc"
+let g:html_indent_style1 = "inc"
+
 " Saving myself ala thoughtbot .vimrc https://github.com/thoughtbot/dotfiles/blob/master/vimrc:
 nnoremap <Left> :echoe: "Use h"<CR>
 nnoremap <Right> :echoe: "Use l"<CR>
