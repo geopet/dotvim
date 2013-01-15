@@ -46,7 +46,9 @@ set wildmode=longest,list,full    " Tab completion order (:h 'wildmode')
 set wildmenu                      " Tab completion in commandline (:h 'wildmenu')
 
 set hidden                        " Deals with changed buffers silently (:h 'hidden')
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\
+set listchars+=eol:¬
+set listchars+=trail:.
 
 " PHP customization, see comments in syntax
 let g:php_sql_query=1
@@ -61,6 +63,11 @@ let g:html_indent_style1 = "inc"
 
 " NERDTree mapping
 noremap <leader>n :NERDTreeToggle<CR>
+
+" Markdown prefs
+au BufRead,BufNewFile *.md set filetype=markdown
+au BufRead,BufNewFile *.md setlocal spell
+au BufRead,BufNewFile *.md setlocal textwidth=80
 
 " Saving myself ala thoughtbot .vimrc https://github.com/thoughtbot/dotfiles/blob/master/vimrc:
 nnoremap <Left> :echoe: "Use h"<CR>
