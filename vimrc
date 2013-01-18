@@ -12,6 +12,8 @@ execute pathogen#infect()
 " Allows me to manage my colorscheme & language syntax files with submodules and Pathogen
 execute pathogen#infect('colors')
 execute pathogen#infect('languages')
+" Invokes :helptags on everything in the runtimepath
+execute pathogen#helptags()
 
 colorscheme Tomorrow-Night
 set guifont=Source\ Code\ Pro:h14
