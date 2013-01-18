@@ -31,3 +31,6 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = git://github.com/ervandew/supertab.git
+[submodule "colors/jellybeans"]
+	path = colors/jellybeans
+	url = git://github.com/nanotech/jellybeans.vim.git
