@@ -29,6 +29,7 @@ set ruler                         " Show line and column number in status (:h 'r
 set number                        " Show line number (:h number)
 set numberwidth=5                 " Giving space on the number line (:h 'numberwidth')
 set encoding=utf-8                " Set encoding to UTF-8 (:h 'encoding')
+set scrolloff=8                   " Keep cursor 8 lines from the top or bottom of the buffer
 
 set nowrap                        " Turn off line wrap (:h nowrap)
 set expandtab                     " Turns tabs to spaces (:h 'expandtab')
@@ -65,6 +66,9 @@ let g:html_indent_style1 = "inc"
 
 " NERDTree mapping
 noremap <leader>n :NERDTreeToggle<CR>
+
+" map <ESC> to jj
+inoremap jj <ESC>
 
 " Markdown prefs
 au BufRead,BufNewFile *.md set filetype=markdown
