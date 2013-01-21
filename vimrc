@@ -68,16 +68,21 @@ let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
 
-" NERDTree mapping
-noremap <leader>n :NERDTreeToggle<CR>
-
-" map <ESC> to jj
-inoremap jj <ESC>
-
 " Markdown prefs
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.md setlocal spell
 au BufRead,BufNewFile *.md setlocal textwidth=80
+
+" Remaps
+
+" NERDTree mapping
+noremap <leader>n :NERDTreeToggle<CR>
+
+" Map <ESC> to jj
+inoremap jj <ESC>
+
+" Map :noh to mm
+noremap mm :noh<CR>
 
 " Saving myself ala thoughtbot .vimrc https://github.com/thoughtbot/dotfiles/blob/master/vimrc:
 nnoremap <Left> :echoe: "Use h"<CR>
