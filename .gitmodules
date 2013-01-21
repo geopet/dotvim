@@ -46,3 +46,6 @@
 [submodule "colors/vim-irblack"]
 	path = colors/vim-irblack
 	url = git://github.com/wgibbs/vim-irblack.git
+[submodule "colors/vim-twilight"]
+	path = colors/vim-twilight
+	url = git://github.com/matthewtodd/vim-twilight.git
