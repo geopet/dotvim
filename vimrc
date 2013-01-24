@@ -81,10 +81,6 @@ noremap <leader>n :NERDTreeToggle<CR>
 " Map :noh to mm
 noremap mm :noh<CR>
 
-" Remove backspace from insert -- this will probably cause pain initially
-" Use <CTRL-h> or <CTRL-w>
-inoremap <BS> <NOP>
-
 " Saving myself ala thoughtbot .vimrc https://github.com/thoughtbot/dotfiles/blob/master/vimrc:
 nnoremap <Left> :echoe: "Use h"<CR>
 nnoremap <Right> :echoe: "Use l"<CR>
