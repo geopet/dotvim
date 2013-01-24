@@ -81,6 +81,9 @@ noremap <leader>n :NERDTreeToggle<CR>
 " Map :noh to mm
 noremap mm :noh<CR>
 
+" Map kj to escape
+inoremap kj <ESC>
+
 " Saving myself ala thoughtbot .vimrc https://github.com/thoughtbot/dotfiles/blob/master/vimrc:
 nnoremap <Left> :echoe: "Use h"<CR>
 nnoremap <Right> :echoe: "Use l"<CR>
