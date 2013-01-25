@@ -78,6 +78,10 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 " NERDTree mapping
 noremap <leader>n :NERDTreeToggle<CR>
 
+" Fugitive mapping
+noremap <leader>gs :Gstatus<CR>
+noremap <leader>gc :Gcommit<CR>
+
 " Map :noh to mm
 noremap mm :noh<CR>
 
