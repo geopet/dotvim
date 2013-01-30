@@ -12,6 +12,12 @@ As a little bit of history, this is a thing I'm doing after a few years of worki
 [Syntastic](https://github.com/scrooloose/syntastic/) - Syntax checking  
 [NERDTree](https://github.com/scrooloose/nerdtree) - File exploring  
 [NERDCommenter](https://github.com/scrooloose/nerdcommenter) - Simple commenting
+[SuperTab](https://github.com/ervandew/supertab) - Better tab completion
+[Bundler](https://github.com/tpope/vim-bundler) - Bundler support
+[CSS-Color](https://github.com/skammer/vim-css-color) - Highlights CSS
+[Fugitive](https://github.com/tpope/vim-fugitive) - An awesome Git wrapper
+[Rails](https://github.com/tpope/vim-rails) - Rails power tools
+[Rake](https://github.com/tpope/vim-rake) - Rake power tools (may be redundant)
 
 ## Colorschemes:
 
