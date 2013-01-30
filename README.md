@@ -23,6 +23,9 @@ As a little bit of history, this is a thing I'm doing after a few years of worki
 
 [Tomorrow-Theme](https://github.com/chriskempson/vim-tomorrow-theme)  
 [Solarized](https://github.com/altercation/vim-colors-solarized)
+[Jellybeans](https://github.com/nanotech/jellybeans.vim)
+[IR-Black](https://github.com/wgibbs/vim-irblack)
+[Twilight](git://github.com/matthewtodd/vim-twilight.git)
 
 ## Installation:
 
