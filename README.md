@@ -13,22 +13,22 @@ working with [Janus](https://github.com/carlhuda/janus).
 [Pathogen](https://github.com/tpope/vim-pathogen) - Manage runtime path and plugins  
 [Syntastic](https://github.com/scrooloose/syntastic/) - Syntax checking  
 [NERDTree](https://github.com/scrooloose/nerdtree) - File exploring  
-[NERDCommenter](https://github.com/scrooloose/nerdcommenter) - Simple commenting
-[SuperTab](https://github.com/ervandew/supertab) - Better tab completion
-[Bundler](https://github.com/tpope/vim-bundler) - Bundler support
-[CSS-Color](https://github.com/skammer/vim-css-color) - Highlights CSS
-[Fugitive](https://github.com/tpope/vim-fugitive) - An awesome Git wrapper
-[Rails](https://github.com/tpope/vim-rails) - Rails power tools
-[Rake](https://github.com/tpope/vim-rake) - Rake power tools (may be redundant)
-[Ctrlp](https://github.com/kien/ctrlp.vim) - Fuzzy file/buffer finder
+[NERDCommenter](https://github.com/scrooloose/nerdcommenter) - Simple commenting  
+[SuperTab](https://github.com/ervandew/supertab) - Better tab completion  
+[Bundler](https://github.com/tpope/vim-bundler) - Bundler support  
+[CSS-Color](https://github.com/skammer/vim-css-color) - Highlights CSS  
+[Fugitive](https://github.com/tpope/vim-fugitive) - An awesome Git wrapper  
+[Rails](https://github.com/tpope/vim-rails) - Rails power tools  
+[Rake](https://github.com/tpope/vim-rake) - Rake power tools (may be redundant)  
+[Ctrlp](https://github.com/kien/ctrlp.vim) - Fuzzy file/buffer finder  
 
 ## Colorschemes:
 
 [Tomorrow-Theme](https://github.com/chriskempson/vim-tomorrow-theme)  
-[Solarized](https://github.com/altercation/vim-colors-solarized)
-[Jellybeans](https://github.com/nanotech/jellybeans.vim)
-[IR-Black](https://github.com/wgibbs/vim-irblack)
-[Twilight](git://github.com/matthewtodd/vim-twilight.git)
+[Solarized](https://github.com/altercation/vim-colors-solarized)  
+[Jellybeans](https://github.com/nanotech/jellybeans.vim)  
+[IR-Black](https://github.com/wgibbs/vim-irblack)  
+[Twilight](git://github.com/matthewtodd/vim-twilight.git)  
 
 ## Installation:
 
