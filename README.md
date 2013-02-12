@@ -2,9 +2,11 @@
 
 This is the repo for my vim dotfile management.
 
-This commit history is going to be a mess. If you read it, I suspect you'll be able to see into a dark place in my mind.
+This commit history is going to be a mess. If you read it, I suspect you'll be
+able to see into a dark place in my mind.
 
-As a little bit of history, this is a thing I'm doing after a few years of working with [Janus](https://github.com/carlhuda/janus).
+As a little bit of history, this is a thing I'm doing after a few years of
+working with [Janus](https://github.com/carlhuda/janus).
 
 ## Modules:
 
@@ -18,6 +20,7 @@ As a little bit of history, this is a thing I'm doing after a few years of worki
 [Fugitive](https://github.com/tpope/vim-fugitive) - An awesome Git wrapper
 [Rails](https://github.com/tpope/vim-rails) - Rails power tools
 [Rake](https://github.com/tpope/vim-rake) - Rake power tools (may be redundant)
+[Ctrlp](https://github.com/kien/ctrlp.vim) - Fuzzy file/buffer finder
 
 ## Colorschemes:
 
