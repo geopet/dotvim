@@ -58,15 +58,15 @@ set listchars+=eol:¬
 set listchars+=trail:.
 
 " PHP customization, see comments in syntax
-let g:php_sql_query=1
-let g:php_html_in_strings=1
-let g:php_folding=1
-let g:php_html_in_strings=1
+" let g:php_sql_query=1
+" let g:php_html_in_strings=1
+" let g:php_folding=1
+" let g:php_html_in_strings=1
 
 " JavaScript customizations
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
+" let g:html_indent_inctags = "html,body,head,tbody"
+" let g:html_indent_script1 = "inc"
+" let g:html_indent_style1 = "inc"
 
 " Markdown prefs
 au BufRead,BufNewFile *.md set filetype=markdown
@@ -81,6 +81,9 @@ noremap <leader>n :NERDTreeToggle<CR>
 " Fugitive mapping
 noremap <leader>gs :Gstatus<CR>
 noremap <leader>gc :Gcommit<CR>
+
+" Ctrlp mapping
+nnoremap <leader>b :CtrlPBuffer<CR>
 
 " Map :noh to mm
 noremap mm :noh<CR>
