@@ -21,6 +21,7 @@ working with [Janus](https://github.com/carlhuda/janus).
 [Rails](https://github.com/tpope/vim-rails) - Rails power tools  
 [Rake](https://github.com/tpope/vim-rake) - Rake power tools (may be redundant)  
 [Ctrlp](https://github.com/kien/ctrlp.vim) - Fuzzy file/buffer finder  
+[Tabular](https://github.com/godlygeek/tabular) - Text filtering and alignment
 
 ## Colorschemes:
 
@@ -56,12 +57,17 @@ Create symlinks:
 
 _Install instructions shamelessly taken from [Vimcasts Episode 27](http://vimcasts.org/e/27)._
 
+## Adding new plugins
+
+1. Find the plugin you want (ideally on GitHub).
+1. Depending on the type of resource run the Git submodule add command: i.e.
+`$ git submodule add git://github.com/scrooloose/syntastic.git bundle/syntastic`
+
 ## Vim resources:
 
 [The Vim Editor](http://www.vim.org/)  
 [Derck Wyatt's Videos](http://www.derekwyatt.org/vim/vim-tutorial-videos/) - I can't recommend this resouce highly enough.  
 [Vimcasts](http://vimcasts.org/) - Every episode I've watched I've learned something.  
-[Net Tuts Vim Roundup](http://net.tutsplus.com/articles/web-roundups/25-vim-tutorials-screencasts-and-resources/) - I haven't looked closely at this one, but there seems to be some nice recommendations there.  
 
 ## Some additional references:
 
