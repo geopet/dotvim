@@ -6,12 +6,16 @@ let mapleader=" "
 " Setting list for disabling plugins
 " let g:pathogen_disabled = ['syntastic']
 
+" Getting a strange error from bunder right now
+let g:pathogen_disabled = ['vim-bundler']
+let g:pathogen_disabled = ['vim-css-color']
+
 " Loading plugins via Pathogen for runtime management <https://github.com/tpope/vim-pathogen>
 execute pathogen#infect()
 
 " Allows me to manage my colorscheme & language syntax files with submodules and Pathogen
-execute pathogen#infect('colors')
-execute pathogen#infect('languages')
+execute pathogen#infect('colors/{}')
+execute pathogen#infect('languages/{}')
 
 " Invokes :helptags on everything in the runtimepath
 execute pathogen#helptags()
@@ -56,17 +60,11 @@ set hidden                        " Deals with changed buffers silently (:h 'hid
 set listchars=tab:▸\
 set listchars+=eol:¬
 set listchars+=trail:.
+autocmd FileType * setlocal formatoptions-=cro " Tired of the autoinsertion of comments
 
-" PHP customization, see comments in syntax
-" let g:php_sql_query=1
-" let g:php_html_in_strings=1
-" let g:php_folding=1
-" let g:php_html_in_strings=1
-
-" JavaScript customizations
-" let g:html_indent_inctags = "html,body,head,tbody"
-" let g:html_indent_script1 = "inc"
-" let g:html_indent_style1 = "inc"
+" Working with handlebars and ember I'm getting errors from syntastic this
+" should fix this issue:
+let g:syntastic_mode_map={ 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': ['html'] }
 
 " Markdown prefs
 au BufRead,BufNewFile *.md set filetype=markdown
@@ -90,12 +88,6 @@ noremap mm :noh<CR>
 
 " Map kj to escape
 inoremap kj <ESC>
-
-" Saving myself ala thoughtbot .vimrc https://github.com/thoughtbot/dotfiles/blob/master/vimrc:
-nnoremap <Left> :echoe: "Use h"<CR>
-nnoremap <Right> :echoe: "Use l"<CR>
-nnoremap <Up> :echoe: "Use k"<CR>
-nnoremap <Down> :echoe: "Use j"<CR>
 
 " Function to remove trailing whitespace ala VimCasts http://vimcast.org/e/4
 function! <SID>StripTrailingWhitespaces()
