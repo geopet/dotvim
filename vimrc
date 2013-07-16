@@ -23,7 +23,7 @@ execute pathogen#helptags()
 " Dealing with .swp files cluttering up my working directory:
 set directory=~/.vim/tmp/swap//
 
-colorscheme Tomorrow-Night
+"colorscheme Tomorrow-Night
 set guifont=Source\ Code\ Pro:h14
 set colorcolumn=80
 
