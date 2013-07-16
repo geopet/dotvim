@@ -24,6 +24,7 @@ execute pathogen#helptags()
 set directory=~/.vim/tmp/swap//
 
 "colorscheme Tomorrow-Night
+colorscheme Twilight
 set guifont=Source\ Code\ Pro:h14
 set colorcolumn=80
 
@@ -58,7 +59,7 @@ set wildmenu                      " Tab completion in commandline (:h 'wildmenu'
 
 set hidden                        " Deals with changed buffers silently (:h 'hidden')
 set listchars=tab:▸\
-set listchars+=eol:¬
+"set listchars+=eol:¬
 set listchars+=trail:.
 
 " Tired of the autoinsertion of comments
