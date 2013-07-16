@@ -60,7 +60,9 @@ set hidden                        " Deals with changed buffers silently (:h 'hid
 set listchars=tab:▸\
 set listchars+=eol:¬
 set listchars+=trail:.
-autocmd FileType * setlocal formatoptions-=cro " Tired of the autoinsertion of comments
+
+" Tired of the autoinsertion of comments
+autocmd FileType * setlocal formatoptions-=cro 
 
 " Working with handlebars and ember I'm getting errors from syntastic this
 " should fix this issue:
