@@ -27,6 +27,7 @@ set directory=~/.vim/tmp/swap//
 colorscheme Twilight
 set guifont=Source\ Code\ Pro:h14
 set colorcolumn=80
+set cursorline
 
 filetype plugin on                " When a filetype is edited, its plugin file is loaded (:h filetype-plugin-on)
 filetype indent on                " When a filetype is edited, its indent file is loaded (:h filetype-indent-on)
@@ -87,7 +88,7 @@ noremap <leader>gc :Gcommit<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
 
 " Map :noh to mm
-noremap mm :noh<CR>
+noremap <CR> :noh<CR>
 
 " Map kj to escape
 inoremap kj <ESC>
