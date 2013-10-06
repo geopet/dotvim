@@ -1,8 +1,12 @@
-set nocompatible                  " Vim instead of Vi settings (:h 'nocompatible')
+set nocompatible              " Vim instead of Vi settings (:h 'nocompatible')
 syntax on                     " Syntax highlighting, rather important (:h syntax)
 
 " Setting <leader> to the spacebar (:h mapleader)
 let mapleader=" "
+" Trying to sort out why vim is slowing down my spacebar now
+nnoremap <SPACE> <Nop>
+" Fix slow O and spaces inserts
+:set timeout timeoutlen=1000 ttimeoutlen=100
 
 " Setting list for disabling plugins
 " let g:pathogen_disabled = ['syntastic']
@@ -24,11 +28,13 @@ execute pathogen#helptags()
 " Dealing with .swp files cluttering up my working directory:
 set directory=~/.vim/tmp/swap//
 
+:set t_Co=256 " 256 colors
 "colorscheme Tomorrow-Night
 colorscheme Twilight
 set guifont=Source\ Code\ Pro:h14
 set colorcolumn=80
 set cursorline
+set winwidth=80
 
 filetype plugin on                " When a filetype is edited, its plugin file is loaded (:h filetype-plugin-on)
 filetype indent on                " When a filetype is edited, its indent file is loaded (:h filetype-indent-on)
@@ -81,6 +87,9 @@ au BufRead,BufNewFile *.md setlocal textwidth=80
 " NERDTree mapping
 noremap <leader>n :NERDTreeToggle<CR>
 
+" clean up nerdtree oddities
+let g:NERDTreeDirArrows=0
+
 " Fugitive mapping
 noremap <leader>gs :Gstatus<CR>
 noremap <leader>gc :Gcommit<CR>
@@ -103,6 +112,9 @@ nnoremap <c-l> <c-w>l
 " Paste mode santity
 set pastetoggle=<leader>v
 set showmode
+
+" Insert a hash rocket with <c-l>
+imap <c-l> <space>=><space>
 
 " Function to remove trailing whitespace ala VimCasts http://vimcast.org/e/4
 function! <SID>StripTrailingWhitespaces()
