@@ -34,7 +34,7 @@ colorscheme Twilight
 set guifont=Source\ Code\ Pro:h14
 set colorcolumn=80
 set cursorline
-set winwidth=80
+set winwidth=85
 
 filetype plugin on                " When a filetype is edited, its plugin file is loaded (:h filetype-plugin-on)
 filetype indent on                " When a filetype is edited, its indent file is loaded (:h filetype-indent-on)
