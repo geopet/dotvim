@@ -30,7 +30,7 @@ set directory=~/.vim/tmp/swap//
 
 :set t_Co=256 " 256 colors
 "colorscheme Tomorrow-Night
-colorscheme Twilight
+colorscheme twilight
 set guifont=Source\ Code\ Pro:h14
 set colorcolumn=80
 set cursorline
@@ -89,6 +89,8 @@ noremap <leader>n :NERDTreeToggle<CR>
 
 " clean up nerdtree oddities
 let g:NERDTreeDirArrows=0
+" prevent NERDTree from opening at startup
+let g:NERDTreeHijackNetrw=0
 
 " Fugitive mapping
 noremap <leader>gs :Gstatus<CR>
