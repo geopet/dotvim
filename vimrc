@@ -1,3 +1,4 @@
+runtime macros/matchit.vim
 set nocompatible              " Vim instead of Vi settings (:h 'nocompatible')
 syntax on                     " Syntax highlighting, rather important (:h syntax)
 
@@ -12,7 +13,6 @@ nnoremap <SPACE> <Nop>
 " let g:pathogen_disabled = ['syntastic']
 
 " Getting a strange error from bunder right now
-let g:pathogen_disabled = ['vim-bundler']
 let g:pathogen_disabled = ['vim-css-color']
 
 " Loading plugins via Pathogen for runtime management <https://github.com/tpope/vim-pathogen>
@@ -28,13 +28,21 @@ execute pathogen#helptags()
 " Dealing with .swp files cluttering up my working directory:
 set directory=~/.vim/tmp/swap//
 
-:set t_Co=256 " 256 colors
+set t_Co=256 " 256 colors
 "colorscheme Tomorrow-Night
-colorscheme twilight
-set guifont=Source\ Code\ Pro:h14
-set colorcolumn=80
+silent! colorscheme twilight
+"set guifont=Source\ Code\ Pro:h14
+
+"for irb on ubuntu
+if version >= 703
+  set colorcolumn=81
+endif
 set cursorline
-set winwidth=85
+
+set winwidth=84
+set winheight=5
+set winminheight=5
+set winheight=999
 
 filetype plugin on                " When a filetype is edited, its plugin file is loaded (:h filetype-plugin-on)
 filetype indent on                " When a filetype is edited, its indent file is loaded (:h filetype-indent-on)
@@ -111,10 +119,6 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
-" Paste mode santity
-set pastetoggle=<leader>v
-set showmode
-
 " Insert a hash rocket with <c-l>
 imap <c-l> <space>=><space>
 
@@ -135,3 +139,11 @@ nnoremap <leader>sr :silent :call <SID>StripTrailingWhitespaces()<CR>
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
+
+" leaders
+
+" paste mode / paste from system / kill paste mode
+map <leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
+
+" format file
+map <leader>i mmgg=G`m<CR>
