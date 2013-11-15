@@ -74,9 +74,12 @@ set wildmenu                      " Tab completion in commandline (:h 'wildmenu'
 
 set hidden                        " Deals with changed buffers silently (:h 'hidden')
 set list                          " Show invisible characters (:h list)
-set listchars=tab:>-
+"set listchars=tab:>-
+set listchars=tab:▸\
 "set listchars+=eol:<
-set listchars+=trail:.
+set listchars+=eol:¬
+"set listchars+=trail:.
+set listchars+=trail:·
 
 " Tired of the autoinsertion of comments
 autocmd FileType * setlocal formatoptions-=cro
@@ -90,37 +93,10 @@ au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.md setlocal spell
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
-" Remaps
-
-" NERDTree mapping
-noremap <leader>n :NERDTreeToggle<CR>
-
 " clean up nerdtree oddities
 let g:NERDTreeDirArrows=0
 " prevent NERDTree from opening at startup
 let g:NERDTreeHijackNetrw=0
-
-" Fugitive mapping
-noremap <leader>gs :Gstatus<CR>
-noremap <leader>gc :Gcommit<CR>
-
-" Ctrlp mapping
-nnoremap <leader>b :CtrlPBuffer<CR>
-
-" Map :noh to <CR>
-noremap <CR> :noh<CR>
-
-" Map kj to escape
-inoremap kj <ESC>
-
-" Move around splits with <c-hjkl>
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
-
-" Insert a hash rocket with <c-l>
-imap <c-l> <space>=><space>
 
 " Function to remove trailing whitespace ala VimCasts http://vimcast.org/e/4
 function! <SID>StripTrailingWhitespaces()
@@ -135,15 +111,50 @@ function! <SID>StripTrailingWhitespaces()
   call cursor(l, c)
 endfunction
 
+" highlight trailing whitespace (phishme fun!)
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+
+" maps and leaders
+
 nnoremap <leader>sr :silent :call <SID>StripTrailingWhitespaces()<CR>
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
 
-" leaders
+" Map :noh to <CR>
+noremap <CR> :noh<CR>
+
+" Map kj to escape
+inoremap kj <ESC>
+
+" Fugitive mapping
+noremap <leader>gs :Gstatus<CR>
+noremap <leader>gc :Gcommit<CR>
+
+" Move around splits with <c-hjkl>
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 
 " paste mode / paste from system / kill paste mode
 map <leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
 
 " format file
 map <leader>i mmgg=G`m<CR>
+
+" NERDTree mapping
+noremap <leader>t :NERDTreeToggle<CR>
+
+" Ctrlp mapping
+nnoremap <leader>b :CtrlPBuffer<CR>
+
+" Insert a hash rocket with <c-l>
+imap <c-l> <space>=><space>
+
+" Show/hide line numbers
+map <leader>n :set nonumber!<CR>
