@@ -73,3 +73,6 @@
 [submodule "colors/vim-github"]
 	path = colors/vim-github
 	url = https://github.com/croaky/vim-colors-github.git
+[submodule "colors/zenburn"]
+	path = colors/zenburn
+	url = https://github.com/vim-scripts/Zenburn.git
