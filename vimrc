@@ -29,9 +29,8 @@ execute pathogen#helptags()
 set directory=~/.vim/tmp/swap//
 
 set t_Co=256 " 256 colors
-"colorscheme Tomorrow-Night
-silent! colorscheme twilight
-"set guifont=Source\ Code\ Pro:h14
+silent! colorscheme solarized
+set background=dark
 
 "for irb on ubuntu
 if version >= 703
@@ -40,8 +39,8 @@ endif
 set cursorline
 
 set winwidth=84
-set winheight=5
-set winminheight=5
+set winheight=15
+set winminheight=10
 set winheight=999
 
 filetype plugin on                " When a filetype is edited, its plugin file is loaded (:h filetype-plugin-on)
@@ -50,6 +49,7 @@ filetype indent on                " When a filetype is edited, its indent file i
 set showcmd                       " Display incomplete commands (:h 'showcmd')
 set laststatus=2                  " Always show status line (:h 'laststatus')
 set ruler                         " Show line and column number in status (:h 'ruler')
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set number                        " Show line number (:h number)
 set numberwidth=5                 " Giving space on the number line (:h 'numberwidth')
 set encoding=utf-8                " Set encoding to UTF-8 (:h 'encoding')
