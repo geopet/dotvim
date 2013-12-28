@@ -76,3 +76,6 @@
 [submodule "colors/zenburn"]
 	path = colors/zenburn
 	url = https://github.com/vim-scripts/Zenburn.git
+[submodule "bundle/vim-vroom"]
+	path = bundle/vim-vroom
+	url = git://github.com/skalnik/vim-vroom.git
