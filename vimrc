@@ -144,7 +144,7 @@ nnoremap <c-l> <c-w>l
 " paste mode / paste from system / kill paste mode
 map <leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
 
-" format file
+" clean up file formatting
 map <leader>i mmgg=G`m<CR>
 
 " NERDTree mapping
@@ -158,3 +158,9 @@ imap <c-l> <space>=><space>
 
 " Show/hide line numbers
 map <leader>n :set nonumber!<CR>
+
+" Run vroom in vimux
+let g:vroom_use_vimux = 1
+
+" Configure vimux to run a horizontal split
+let g:VimuxOrientation = 'h'
