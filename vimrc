@@ -12,9 +12,6 @@ nnoremap <SPACE> <Nop>
 " Setting list for disabling plugins
 " let g:pathogen_disabled = ['syntastic']
 
-" Getting a strange error from bunder right now
-let g:pathogen_disabled = ['vim-css-color']
-
 " Loading plugins via Pathogen for runtime management <https://github.com/tpope/vim-pathogen>
 execute pathogen#infect()
 
@@ -158,9 +155,3 @@ imap <c-l> <space>=><space>
 
 " Show/hide line numbers
 map <leader>n :set nonumber!<CR>
-
-" Run vroom in vimux
-let g:vroom_use_vimux = 1
-
-" Configure vimux to run a horizontal split
-let g:VimuxOrientation = 'h'
