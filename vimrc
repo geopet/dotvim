@@ -155,3 +155,6 @@ imap <c-l> <space>=><space>
 
 " Show/hide line numbers
 map <leader>n :set nonumber!<CR>
+
+" set formatting for git commits
+autocmd Filetype gitcommit setlocal spell textwidth=72

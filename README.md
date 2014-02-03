@@ -4,7 +4,7 @@ This is the repo for my vim dotfile management.
 
 ## Installation:
 
-`git clone git://github.com/geopet/dotvim.git ~/.vim`
+`git clone git@github.com:geopet/dotvim.git ~/.vim`
 
 Create symlinks:
 
