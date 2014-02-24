@@ -26,7 +26,7 @@ execute pathogen#helptags()
 set directory=~/.vim/tmp/swap//
 
 set t_Co=256 " 256 colors
-silent! colorscheme solarized
+silent! colorscheme jellybeans
 set background=dark
 
 "for irb on ubuntu
