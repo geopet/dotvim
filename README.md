@@ -4,6 +4,11 @@ This is the repo for my vim dotfile management.
 
 ## Installation:
 
+The easiest method is to use [this
+gist](https://gist.github.com/geopet/9190532).
+
+If you'd rather build everything by hand follow these instructions:
+
 `git clone git@github.com:geopet/dotvim.git ~/.vim`
 
 Create symlinks:
