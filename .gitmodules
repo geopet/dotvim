@@ -82,3 +82,6 @@
 [submodule "bundle/vimux"]
 	path = bundle/vimux
 	url = git@github.com:benmills/vimux.git
+[submodule "colors/vim-detailed"]
+	path = colors/vim-detailed
+	url = git@github.com:rking/vim-detailed.git
