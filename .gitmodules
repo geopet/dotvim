@@ -85,3 +85,6 @@
 [submodule "colors/vim-detailed"]
 	path = colors/vim-detailed
 	url = git@github.com:rking/vim-detailed.git
+[submodule "bundle/vim-vinegar"]
+	path = bundle/vim-vinegar
+	url = git@github.com:tpope/vim-vinegar.git
