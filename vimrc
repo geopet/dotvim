@@ -120,7 +120,8 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 nnoremap <leader>sr :silent :call <SID>StripTrailingWhitespaces()<CR>
 
 " Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
+" nmap <leader>l :set list!<CR>
+nmap <leader>l :echoe "use unimpaired col"<CR>
 
 " Map :noh to <CR>
 noremap <CR> :noh<CR>
@@ -154,7 +155,8 @@ nnoremap <leader>b :CtrlPBuffer<CR>
 imap <c-l> <space>=><space>
 
 " Show/hide line numbers
-map <leader>n :set nonumber!<CR>
+" map <leader>n :set nonumber!<CR>
+map <leader>n :echoe "use unimpaired con"<CR>
 
 " set formatting for git commits
 autocmd Filetype gitcommit setlocal spell textwidth=72
