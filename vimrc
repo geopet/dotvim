@@ -15,24 +15,12 @@ nnoremap <SPACE> <Nop>
 " Loading plugins via Pathogen for runtime management <https://github.com/tpope/vim-pathogen>
 execute pathogen#infect()
 
-" Allows me to manage my colorscheme & language syntax files with submodules and Pathogen
-execute pathogen#infect('colors/{}')
-execute pathogen#infect('languages/{}')
-
 " Invokes :helptags on everything in the runtimepath
 execute pathogen#helptags()
 
-" Dealing with .swp files cluttering up my working directory:
-set directory=~/.vim/tmp/swap//
-
 set t_Co=256 " 256 colors
-silent! colorscheme jellybeans
 set background=dark
 
-"for irb on ubuntu
-if version >= 703
-  set colorcolumn=81
-endif
 set cursorline
 
 set winwidth=84
@@ -90,11 +78,6 @@ au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.md setlocal spell
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
-" clean up nerdtree oddities
-let g:NERDTreeDirArrows=0
-" prevent NERDTree from opening at startup
-let g:NERDTreeHijackNetrw=0
-
 " Function to remove trailing whitespace ala VimCasts http://vimcast.org/e/4
 function! <SID>StripTrailingWhitespaces()
   " Preparation save last search, and cursor position.
@@ -119,10 +102,6 @@ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 
 nnoremap <leader>sr :silent :call <SID>StripTrailingWhitespaces()<CR>
 
-" Shortcut to rapidly toggle `set list`
-" nmap <leader>l :set list!<CR>
-nmap <leader>l :echoe "use unimpaired col"<CR>
-
 " Map :noh to <CR>
 noremap <CR> :noh<CR>
 
@@ -145,18 +124,11 @@ map <leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
 " clean up file formatting
 map <leader>i mmgg=G`m<CR>
 
-" NERDTree mapping
-noremap <leader>t :NERDTreeToggle<CR>
-
 " Ctrlp mapping
 nnoremap <leader>b :CtrlPBuffer<CR>
 
 " Insert a hash rocket with <c-l>
 imap <c-l> <space>=><space>
-
-" Show/hide line numbers
-" map <leader>n :set nonumber!<CR>
-map <leader>n :echoe "use unimpaired con"<CR>
 
 " set formatting for git commits
 autocmd Filetype gitcommit setlocal spell textwidth=72
