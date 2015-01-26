@@ -8,13 +8,14 @@ rm -rf ~/.vim
 rm -rf ~/.vimrc
 rm -rf ~/.gvimrc
 
+git clone -b remove-submodules git@github.com:geopet/dotvim.git ~/.vim
+
 # install pathogen
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 # install vim configs create sym links
 
-git clone git@github.com:geopet/dotvim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
 
