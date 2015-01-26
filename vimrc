@@ -9,13 +9,7 @@ nnoremap <SPACE> <Nop>
 " Fix slow O and spaces inserts
 :set timeout timeoutlen=1000 ttimeoutlen=100
 
-" Setting list for disabling plugins
-" let g:pathogen_disabled = ['syntastic']
-
-" Loading plugins via Pathogen for runtime management <https://github.com/tpope/vim-pathogen>
 execute pathogen#infect()
-
-" Invokes :helptags on everything in the runtimepath
 execute pathogen#helptags()
 
 set t_Co=256 " 256 colors
@@ -57,13 +51,13 @@ set cindent                       " C-style indentation (:h 'cindent)
 set wildmode=longest,list,full    " Tab completion order (:h 'wildmode')
 set wildmenu                      " Tab completion in commandline (:h 'wildmenu')
 
+set nobackup
+set noswapfile
+
 set hidden                        " Deals with changed buffers silently (:h 'hidden')
 set list                          " Show invisible characters (:h list)
-"set listchars=tab:>-
 set listchars=tab:▸\
-"set listchars+=eol:<
 set listchars+=eol:¬
-"set listchars+=trail:.
 set listchars+=trail:·
 
 " Tired of the autoinsertion of comments
@@ -117,9 +111,6 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
-
-" paste mode / paste from system / kill paste mode
-map <leader>p :set paste<CR>o<esc>"*]p:set nopaste<cr>
 
 " clean up file formatting
 map <leader>i mmgg=G`m<CR>
