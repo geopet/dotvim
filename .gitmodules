@@ -1,6 +1,0 @@
-[submodule "bundle/vim-css-color"]
-	path = bundle/vim-css-color
-	url = git://github.com/skammer/vim-css-color.git
-[submodule "bundle/vimux"]
-	path = bundle/vimux
-	url = git@github.com:benmills/vimux.git
