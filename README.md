@@ -6,9 +6,9 @@ This is the repo for my vim dotfile management.
 
 Clone the repo: `git clone git@github.com:geopet/dotvim.git`
 
-CD into .vim: `cd .vim`
-
-Run the vim-init.sh: `./vim-init.sh`
+`cd ~/dotvim`  
+`git checkout -b remove-submodules origin/remove-submodules`  
+`./vim-init.sh`
 
 ## Adding new plugins
 
