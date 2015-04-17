@@ -35,8 +35,19 @@ git clone git@github.com:tpope/vim-repeat.git
 git clone git@github.com:tpope/vim-surround.git
 git clone git@github.com:tpope/vim-unimpaired.git
 git clone git@github.com:tpope/vim-vinegar.git
+git clone git@github.com:tpope/vim-eunuch.git
 git clone git@github.com:skalnik/vim-vroom.git
 
 git clone git@github.com:pangloss/vim-javascript.git
 git clone git@github.com:tpope/vim-markdown.git
 git clone git@github.com:vim-ruby/vim-ruby.git
+
+# colors
+
+git clone git@github.com:matthewtodd/vim-twilight.git
+git clone git@github.com:nanotech/jellybeans.vim.git
+git clone git@github.com:chriskempson/vim-tomorrow-theme.git
+git clone git@github.com:rking/vim-detailed.git
+git clone git@github.com:acarapetis/vim-colors-github.git
+git clone git@github.com:wesgibbs/vim-irblack.git
+git clone git@github.com:vim-scripts/Zenburn.git
