@@ -51,3 +51,4 @@ git clone git@github.com:rking/vim-detailed.git
 git clone git@github.com:acarapetis/vim-colors-github.git
 git clone git@github.com:wesgibbs/vim-irblack.git
 git clone git@github.com:vim-scripts/Zenburn.git
+git clone git@github.com:tomasr/molokai.git
