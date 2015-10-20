@@ -124,3 +124,6 @@ imap <c-l> <space>=><space>
 
 " set formatting for git commits
 autocmd Filetype gitcommit setlocal spell textwidth=72
+
+" add pry binding iabbrev
+iabbrev bpry require 'pry'; binding.pry
