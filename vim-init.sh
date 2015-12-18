@@ -8,7 +8,7 @@ rm -rf ~/.vim
 rm -rf ~/.vimrc
 rm -rf ~/.gvimrc
 
-git clone -b remove-submodules git@github.com:geopet/dotvim.git ~/.vim
+git clone git@github.com:geopet/dotvim.git ~/.vim
 
 # install pathogen
 
