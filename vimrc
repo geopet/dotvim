@@ -68,6 +68,9 @@ autocmd FileType * setlocal formatoptions-=cro
 " should fix this issue:
 let g:syntastic_mode_map={ 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': ['html'] }
 
+" Use JSX syntax highlighting for all JS files
+let g:jsx_ext_required = 0
+
 " Markdown prefs
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.md setlocal spell
