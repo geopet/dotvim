@@ -42,6 +42,7 @@ git clone git@github.com:pangloss/vim-javascript.git
 git clone git@github.com:tpope/vim-markdown.git
 git clone git@github.com:vim-ruby/vim-ruby.git
 git clone git@github.com:mxw/vim-jsx.git
+git clone git@github.com:elixir-lang/vim-elixir.git
 
 # colors
 
