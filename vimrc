@@ -14,7 +14,7 @@ execute pathogen#helptags()
 
 set t_Co=256 " 256 colors
 set background=dark
-colorscheme jellybeans
+" colorscheme Zenburn
 
 set cursorline
 
@@ -31,6 +31,7 @@ set laststatus=2                  " Always show status line (:h 'laststatus')
 set ruler                         " Show line and column number in status (:h 'ruler')
 set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set number                        " Show line number (:h number)
+set relativenumber                        " Show line number (:h number)
 set numberwidth=5                 " Giving space on the number line (:h 'numberwidth')
 set encoding=utf-8                " Set encoding to UTF-8 (:h 'encoding')
 set scrolloff=8                   " Keep cursor 8 lines from the top or bottom of the buffer
