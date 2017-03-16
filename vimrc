@@ -1,6 +1,6 @@
 runtime macros/matchit.vim
 set nocompatible              " Vim instead of Vi settings (:h 'nocompatible')
-syntax on                     " Syntax highlighting, rather important (:h syntax)
+syntax on                     " Syntax highlighting (:h syntax)
 
 " Setting <leader> to the spacebar (:h mapleader)
 let mapleader=" "
@@ -12,16 +12,13 @@ nnoremap <SPACE> <Nop>
 execute pathogen#infect()
 execute pathogen#helptags()
 
-set t_Co=256 " 256 colors
+set t_Co=256
 set background=dark
 colorscheme jellybeans
 
 set cursorline
 
-set winwidth=84
-set winheight=15
-set winminheight=10
-set winheight=999
+set winwidth=79
 
 filetype plugin on                " When a filetype is edited, its plugin file is loaded (:h filetype-plugin-on)
 filetype indent on                " When a filetype is edited, its indent file is loaded (:h filetype-indent-on)
@@ -34,6 +31,9 @@ set number                        " Show line number (:h number)
 set numberwidth=5                 " Giving space on the number line (:h 'numberwidth')
 set encoding=utf-8                " Set encoding to UTF-8 (:h 'encoding')
 set scrolloff=8                   " Keep cursor 8 lines from the top or bottom of the buffer
+set splitbelow
+set splitright
+set showtabline=2                 " Always show the tab bar
 
 set backspace=indent,eol,start    " allow backspacing over everything in insert mode
 set nowrap                        " Turn off line wrap (:h nowrap)
@@ -76,6 +76,9 @@ au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.md setlocal spell
 au BufRead,BufNewFile *.md setlocal textwidth=80
 
+" set formatting for git commits
+autocmd Filetype gitcommit setlocal spell textwidth=72
+
 " Function to remove trailing whitespace ala VimCasts http://vimcast.org/e/4
 function! <SID>StripTrailingWhitespaces()
   " Preparation save last search, and cursor position.
@@ -89,7 +92,7 @@ function! <SID>StripTrailingWhitespaces()
   call cursor(l, c)
 endfunction
 
-" highlight trailing whitespace (phishme fun!)
+" highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
@@ -121,12 +124,6 @@ map <leader>i mmgg=G`m<CR>
 
 " Ctrlp mapping
 nnoremap <leader>b :CtrlPBuffer<CR>
-
-" Insert a hash rocket with <c-l>
-imap <c-l> <space>=><space>
-
-" set formatting for git commits
-autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " add pry binding iabbrev
 iabbrev bpry require 'pry'; binding.pry
