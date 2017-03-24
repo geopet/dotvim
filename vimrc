@@ -125,5 +125,8 @@ map <leader>i mmgg=G`m<CR>
 " Ctrlp mapping
 nnoremap <leader>b :CtrlPBuffer<CR>
 
+" Insert a hash rocket with <c-l>
+imap <c-l> <space>=><space>
+
 " add pry binding iabbrev
 iabbrev bpry require 'pry'; binding.pry
