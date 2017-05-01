@@ -71,6 +71,9 @@ let g:syntastic_mode_map={ 'mode': 'active', 'active_filetypes': [], 'passive_fi
 " Use JSX syntax highlighting for all JS files
 let g:jsx_ext_required = 0
 
+" Format elm files on save
+let g:elm_format_autosave = 1
+
 " Markdown prefs
 au BufRead,BufNewFile *.md set filetype=markdown
 au BufRead,BufNewFile *.md setlocal spell
