@@ -38,6 +38,7 @@ git clone git@github.com:tpope/vim-vinegar.git
 git clone git@github.com:tpope/vim-eunuch.git
 git clone git@github.com:skalnik/vim-vroom.git
 git clone https://github.com/christoomey/vim-tmux-navigator.git
+git clone git@github.com:rking/ag.vim.git
 
 git clone git@github.com:pangloss/vim-javascript.git
 git clone git@github.com:tpope/vim-markdown.git
