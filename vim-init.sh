@@ -48,6 +48,7 @@ git clone git@github.com:elixir-lang/vim-elixir.git
 git clone git@github.com:rust-lang/rust.vim.git
 git clone git@github.com:ElmCast/elm-vim.git
 git clone git@github.com:wilsaj/chuck.vim.git
+git clone git@github.com:digitaltoad/vim-pug.git
 
 # colors
 
