@@ -14,7 +14,7 @@ execute pathogen#helptags()
 
 set t_Co=256
 set background=dark
-colorscheme jellybeans
+colorscheme monokai
 
 set cursorline
 
@@ -51,6 +51,7 @@ set smartindent                   " A little better indenting (:h 'smartindent')
 set cindent                       " C-style indentation (:h 'cindent)
 set wildmode=longest,list,full    " Tab completion order (:h 'wildmode')
 set wildmenu                      " Tab completion in commandline (:h 'wildmenu')
+set mouse=a                       " Yeah, yeah... I'm adding mouse support
 
 set nobackup
 set noswapfile

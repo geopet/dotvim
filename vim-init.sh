@@ -40,15 +40,16 @@ git clone git@github.com:skalnik/vim-vroom.git
 git clone https://github.com/christoomey/vim-tmux-navigator.git
 git clone git@github.com:rking/ag.vim.git
 
-git clone git@github.com:pangloss/vim-javascript.git
-git clone git@github.com:tpope/vim-markdown.git
 git clone git@github.com:vim-ruby/vim-ruby.git
-git clone git@github.com:mxw/vim-jsx.git
+git clone git@github.com:pangloss/vim-javascript.git
+git clone git@github.com:ElmCast/elm-vim.git
 git clone git@github.com:elixir-lang/vim-elixir.git
 git clone git@github.com:rust-lang/rust.vim.git
-git clone git@github.com:ElmCast/elm-vim.git
+git clone git@github.com:tpope/vim-markdown.git
+git clone git@github.com:mxw/vim-jsx.git
 git clone git@github.com:wilsaj/chuck.vim.git
 git clone git@github.com:digitaltoad/vim-pug.git
+git clone git@github.com:mustache/vim-mustache-handlebars.git
 
 # colors
 
@@ -60,3 +61,4 @@ git clone git@github.com:acarapetis/vim-colors-github.git
 git clone git@github.com:wesgibbs/vim-irblack.git
 git clone git@github.com:vim-scripts/Zenburn.git
 git clone git@github.com:tomasr/molokai.git
+git clone git@github.com:sickill/vim-monokai.git
