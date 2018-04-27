@@ -25,8 +25,8 @@ cd ~/.vim/bundle
 
 git clone git@github.com:kien/ctrlp.vim.git
 git clone git@github.com:ervandew/supertab.git
-git clone git@github.com:w0rp/ale.git
 git clone git@github.com:tpope/vim-bundler.git
+git clone git@github.com:scrooloose/syntastic.git
 git clone git@github.com:tpope/vim-commentary.git
 git clone git@github.com:tpope/vim-fugitive.git
 git clone git@github.com:tpope/vim-rails.git
@@ -37,7 +37,7 @@ git clone git@github.com:tpope/vim-unimpaired.git
 git clone git@github.com:tpope/vim-vinegar.git
 git clone git@github.com:tpope/vim-eunuch.git
 git clone git@github.com:skalnik/vim-vroom.git
-git clone https://github.com/christoomey/vim-tmux-navigator.git
+git clone git@github.com:christoomey/vim-tmux-navigator.git
 git clone git@github.com:rking/ag.vim.git
 
 git clone git@github.com:vim-ruby/vim-ruby.git
