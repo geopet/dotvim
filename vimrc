@@ -68,6 +68,7 @@ autocmd FileType * setlocal formatoptions-=cro
 " Working with handlebars and ember I'm getting errors from syntastic this
 " should fix this issue:
 let g:syntastic_mode_map={ 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': ['html'] }
+let g:syntastic_javascript_checkers = ['eslint']
 
 " Use JSX syntax highlighting for all JS files
 let g:jsx_ext_required = 0
