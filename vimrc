@@ -69,6 +69,7 @@ autocmd FileType * setlocal formatoptions-=cro
 " should fix this issue:
 let g:syntastic_mode_map={ 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': ['html'] }
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
 
 " Use JSX syntax highlighting for all JS files
 let g:jsx_ext_required = 0
