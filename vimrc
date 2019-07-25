@@ -62,6 +62,10 @@ set listchars+=trail:·
 " Tired of the autoinsertion of comments
 autocmd FileType * setlocal formatoptions-=cro
 
+" standard linting ale configuration
+let g:ale_linters = {'javascript': ['standard']}
+let g:ale_fixers = {'javascript': ['standard']}
+
 " Use JSX syntax highlighting for all JS files
 let g:jsx_ext_required = 0
 
