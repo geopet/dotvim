@@ -8,7 +8,7 @@ rm -rf ~/.vim
 rm -rf ~/.vimrc
 rm -rf ~/.gvimrc
 
-git clone -b vimpack git@github.com:geopet/dotvim.git ~/.vim
+git clone git@github.com:geopet/dotvim.git ~/.vim
 mkdir -p ~/.vim/pack/plugins/start
 mkdir -p ~/.vim/pack/languages/start
 mkdir -p ~/.vim/pack/colors/start
