@@ -8,29 +8,25 @@ rm -rf ~/.vim
 rm -rf ~/.vimrc
 rm -rf ~/.gvimrc
 
-git clone git@github.com:geopet/dotvim.git ~/.vim
-
-# install pathogen
-
-mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+git clone -b vimpack git@github.com:geopet/dotvim.git ~/.vim
+mkdir -p ~/.vim/pack/plugins/start
+mkdir -p ~/.vim/pack/languages/start
+mkdir -p ~/.vim/pack/colors/start
 
 # install vim configs create sym links
 
 ln -s ~/.vim/vimrc ~/.vimrc
 ln -s ~/.vim/gvimrc ~/.gvimrc
 
-# install plugins
+# plugins
 
-cd ~/.vim/bundle
+cd ~/.vim/pack/plugins/start
 
 git clone git@github.com:kien/ctrlp.vim.git
 git clone git@github.com:ervandew/supertab.git
 git clone git@github.com:tpope/vim-bundler.git
-git clone git@github.com:scrooloose/syntastic.git
 git clone git@github.com:tpope/vim-commentary.git
 git clone git@github.com:tpope/vim-fugitive.git
-git clone git@github.com:tpope/vim-rails.git
-git clone git@github.com:tpope/vim-rake.git
 git clone git@github.com:tpope/vim-repeat.git
 git clone git@github.com:tpope/vim-surround.git
 git clone git@github.com:tpope/vim-unimpaired.git
@@ -39,8 +35,15 @@ git clone git@github.com:tpope/vim-eunuch.git
 git clone git@github.com:skalnik/vim-vroom.git
 git clone git@github.com:christoomey/vim-tmux-navigator.git
 git clone git@github.com:rking/ag.vim.git
+git clone git@github.com:w0rp/ale.git
+
+# languages
+
+cd ~/.vim/pack/languages/start
 
 git clone git@github.com:vim-ruby/vim-ruby.git
+git clone git@github.com:tpope/vim-rails.git
+git clone git@github.com:tpope/vim-rake.git
 git clone git@github.com:pangloss/vim-javascript.git
 git clone git@github.com:isRuslan/vim-es6.git
 git clone git@github.com:ElmCast/elm-vim.git
@@ -53,6 +56,8 @@ git clone git@github.com:digitaltoad/vim-pug.git
 git clone git@github.com:mustache/vim-mustache-handlebars.git
 
 # colors
+
+cd ~/.vim/pack/colors/start
 
 git clone git@github.com:matthewtodd/vim-twilight.git
 git clone git@github.com:nanotech/jellybeans.vim.git

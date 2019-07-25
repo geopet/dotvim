@@ -9,9 +9,6 @@ nnoremap <SPACE> <Nop>
 " Fix slow O and spaces inserts
 :set timeout timeoutlen=1000 ttimeoutlen=100
 
-execute pathogen#infect()
-execute pathogen#helptags()
-
 set t_Co=256
 set background=dark
 colorscheme monokai
@@ -64,12 +61,6 @@ set listchars+=trail:·
 
 " Tired of the autoinsertion of comments
 autocmd FileType * setlocal formatoptions-=cro
-
-" Working with handlebars and ember I'm getting errors from syntastic this
-" should fix this issue:
-let g:syntastic_mode_map={ 'mode': 'active', 'active_filetypes': [], 'passive_filetypes': ['html'] }
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exe = '$(npm bin)/eslint'
 
 " Use JSX syntax highlighting for all JS files
 let g:jsx_ext_required = 0
@@ -136,3 +127,10 @@ imap <c-l> <space>=><space>
 
 " add pry binding iabbrev
 iabbrev bpry require 'pry'; binding.pry
+
+" Load all plugins now.
+" Plugins need to be added to runtimepath before helptags can be generated.
+packloadall
+" Load all of the helptags now, after plugins have been loaded.
+" All messages and errors will be ignored.
+silent! helptags ALL
