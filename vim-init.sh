@@ -35,7 +35,7 @@ git clone git@github.com:tpope/vim-eunuch.git
 git clone git@github.com:skalnik/vim-vroom.git
 git clone git@github.com:christoomey/vim-tmux-navigator.git
 git clone git@github.com:rking/ag.vim.git
-git clone git@github.com:w0rp/ale.git
+git clone git@github.com:dense-analysis/ale.git
 
 # languages
 
