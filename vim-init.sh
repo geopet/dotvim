@@ -55,7 +55,7 @@ git clone git@github.com:wilsaj/chuck.vim.git
 git clone git@github.com:digitaltoad/vim-pug.git
 git clone git@github.com:mustache/vim-mustache-handlebars.git
 git clone git@github.com:justinj/vim-pico8-syntax.git
-
+git clone git@github.com:fatih/vim-go.git
 # colors
 
 cd ~/.vim/pack/colors/start
